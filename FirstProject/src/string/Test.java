@@ -8,9 +8,15 @@ public class Test {
 		Test test1 = new Test();
 		String s1 = "world";
 		String s2 = "world";
-		/*
-		 * System.out.println(s1.equals(s2)); System.out.println(s1 == s2);
-		 * System.out.println(s1.hashCode()); System.out.println(test1.hashCode());
-		 */
+
+		System.out.println(s1.equals(s2));
+		System.out.println(s1 == s2);
+		s1.hashCode();
+		s1.equals(s2);
+		s1 == s2;
+		//System.out.println(s1.hashCode());
+		//System.out.println(s1.hashCode());
+		//System.out.println(test1.hashCode());
+
 	}
 }
