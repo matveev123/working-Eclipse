@@ -19,8 +19,6 @@ public class ExerciseOne {
 		String s = sc.next();
 		System.out.print("Print you last name:");
 		new ExerciseOne().greeting(s, sc.next());
-		// String str = sc.next();
-		// sSystem.out.println(s);
 
 	}
 }
