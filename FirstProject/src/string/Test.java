@@ -1,6 +1,6 @@
 package string;
 
-import javax.xml.transform.Templates;
+import static util.Print.*;
 
 public class Test {
 	public static void main(String[] args) {
@@ -13,7 +13,8 @@ public class Test {
 		System.out.println(s1 == s2);
 		s1.hashCode();
 		s1.equals(s2);
-		s1 == s2;
+		print("HI,master!");
+		//s1 == s2;
 		//System.out.println(s1.hashCode());
 		//System.out.println(s1.hashCode());
 		//System.out.println(test1.hashCode());
