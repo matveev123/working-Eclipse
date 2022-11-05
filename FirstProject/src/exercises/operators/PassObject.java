@@ -1,21 +1,24 @@
+//ExreciseThree
 package exercises.operators;
 
-public class PassObject {
+import static util.Print.*;
 
-	static void f(Letter l) {
-		l.c = 'z';
+public class PassObject {
+	static void f(Box x) {
+		x.val = 12.44f;
 	}
 
 	public static void main(String[] args) {
-		Letter letter = new Letter();
-		letter.c = 'a';
-		System.out.println("letter.c = " + letter.c);
-		f(letter);
-		System.out.println("letter.c = " + letter.c);
+		Box box = new Box();
+		box.val = 5.5f;
+		print("box.val = " + box.val);
+		f(box);
+		print("box.val = " + box.val);
+
 	}
 
 }
 
-class Letter {
-	char c;
+class Box {
+	float val;
 }
