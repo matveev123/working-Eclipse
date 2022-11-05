@@ -24,7 +24,7 @@ public class ExerciseEighteen {
 	}
 
 	public static void main(String[] args) {
-		findPrimeBounds(0,20);
+		findPrimeBounds(0, 20);
 	}
 
 }
