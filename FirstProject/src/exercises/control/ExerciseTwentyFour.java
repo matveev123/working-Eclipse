@@ -26,8 +26,8 @@ public class ExerciseTwentyFour {
 		arr[0][2] = mas[0] * 10 + mas[3];// AB 02
 		// = mas[1] * 10 + mas[0];
 		arr[1][0] = ((mas[1] == 0) ? (mas[1] = mas[0]) : (mas[1] = mas[1])) * 10 + mas[0];// BA 10
-		arr[1][1] = ((mas[1] == 0) ? (mas[1] = mas[2]) : (mas[1] = mas[1])) * 10 + mas[2];// BC 12 //?
-		arr[1][2] = ((mas[1] == 0) ? (mas[1] = mas[3]) : (mas[1] = mas[1])) * 10 + mas[3];// BD 13 //?
+		arr[1][1] = ((mas[1] == 0) ? (mas[1] = mas[2]) : (mas[1] = mas[1])) * 10 + mas[2];// BC 12 
+		arr[1][2] = ((mas[1] == 0) ? (mas[1] = mas[3]) : (mas[1] = mas[1])) * 10 + mas[3];// BD 13 
 
 		arr[2][0] = ((mas[2] == 0) ? (mas[2] = mas[0]) : (mas[2] = mas[2])) * 10 + mas[0];// CA 20
 		arr[2][1] = ((mas[2] == 0) ? (mas[2] = mas[1]) : (mas[2] = mas[2])) * 10 + mas[1];// CB 21
@@ -67,23 +67,15 @@ public class ExerciseTwentyFour {
 
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {// 6880 = 86*60 missed!
 		for (int r = 1000; r <= 9999; r++) {
 			int mas[] = f(r);
 			int arr[][] = m(mas);
-			if (r == 6880)
-				print("!");
 			for (int i = 0; i < arr.length; i++)
 				for (int j = 0; j < arr[0].length; j++)
 					for (int k = 0; k < arr.length; k++)
 						for (int l = 0; l < arr[0].length; l++)
 							method(arr[i][j] * arr[k][l], arr[i][j], arr[k][l]);
-
-
-			// 4 * 10 + [ (n%100)/10 ]
-			// 4 * 10 + [ (n/100)*10 ]
-			// 4 * 10 + [ n/1000 ]
-
 		}
 	}
 }
