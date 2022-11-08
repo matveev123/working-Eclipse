@@ -8,17 +8,21 @@ public class ExerciseTen {
 		// ! | & ^
 		int cnst1 = 121;
 		int cnst2 = 80;
-		/*
-		 * print(Integer.toBinaryString(cnst1)); print(Integer.toBinaryString(cnst2));
-		 * print(Integer.toBinaryString(cnst1 & cnst2));
-		 * print(Integer.toBinaryString(cnst2 & cnst1));
-		 * print(Integer.toBinaryString(cnst2 | cnst1));
-		 * print(Integer.toBinaryString(cnst1 | cnst2));
-		 * print(Integer.toBinaryString(cnst1 ^ cnst2));
-		 * print(Integer.toBinaryString(cnst2 ^ cnst1));
-		 * print(Integer.toBinaryString(~cnst2)); print(Integer.toBinaryString(~cnst1));
-		 * print(true | false); print(true & false); print(true ^ false);
-		 */
+
+		print(Integer.toBinaryString(cnst1));
+		print(Integer.toBinaryString(cnst2));
+		print(Integer.toBinaryString(cnst1 & cnst2));
+		print(Integer.toBinaryString(cnst2 & cnst1));
+		print(Integer.toBinaryString(cnst2 | cnst1));
+		print(Integer.toBinaryString(cnst1 | cnst2));
+		print(Integer.toBinaryString(cnst1 ^ cnst2));
+		print(Integer.toBinaryString(cnst2 ^ cnst1));
+		print(Integer.toBinaryString(~cnst2));
+		print(Integer.toBinaryString(~cnst1));
+		print(true | false);
+		print(true & false);
+		print(true ^ false);
+
 		// 1000000000000000000000
 		// 1111111111111111111111111111111
 
@@ -59,7 +63,7 @@ public class ExerciseTen {
 		byte b = -128;// until -128(2^7)
 		short valShort = -32768;// until -32768(2^15)
 		int iVal = -2_147_483_648;// until -2147483648(2^31)
-		print(Integer.toBinaryString(Byte.MAX_VALUE) + " = byte max");// 7 digits
+		//print(Integer.toBinaryString(Byte.MAX_VALUE) + " = byte max");// 7 digits
 		print(Integer.toBinaryString(b) + " = byte min");// (32) '-' + 7 digits(0)
 
 		print(Integer.toBinaryString(Short.MAX_VALUE) + " = short max");// 15 digits
