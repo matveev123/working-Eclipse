@@ -7,6 +7,11 @@ public class Print {
 		System.out.println(obj);
 	}
 
+	public static void print(Object[] obj) {
+		for (Object x : obj)
+			System.out.print(x + " ");
+	}
+
 	public static void printb(Object obj) {
 		System.out.print(obj);
 	}
