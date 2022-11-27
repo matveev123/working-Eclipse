@@ -1,4 +1,4 @@
-package poly;
+package polymorphism;
 
 public class Triangle extends Shape {
 	public void draw() {
